@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.form-container {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.form-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    margin-bottom: 30px;
+    color: gray;
+    font-size: 14px;
+}
+
+.form-container form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social-login button {
+    flex: 1;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: gray;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background-image: url('../images/5296499_fb_facebook_facebook\ logo_icon.svg'); */
+
+}
+
+.social-login button:hover {
+    background-color: #f9f9f9;
+}
+
+.form-container .footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+.form-container .footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-container .footer a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    width: 50%;
+    background-image: url('background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
