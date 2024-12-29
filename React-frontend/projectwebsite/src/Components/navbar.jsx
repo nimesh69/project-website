@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import Button from './button'
+import {Headers} from './header'
 
 
 
@@ -13,11 +13,11 @@ const Navbar = () => {
       <div className="navbar-brand">Recovering and Enhancing Facial Images</div>
       <ul className="navbar-links">
         
-        <Button value='Home' />
-        <Button value='About Us' />
-        <Button value='Sign Up/Login' />
-        <Button value='Our Work' />
-        <Button value='Contact Us' />
+        <Headers value='Home' link="/" />
+        <Headers value='About Us' />
+        <Headers value='Sign Up/Login' link="/login" />
+        <Headers value='Our Work' />
+        <Headers value='Contact Us' />
         
       </ul>
     </nav>
