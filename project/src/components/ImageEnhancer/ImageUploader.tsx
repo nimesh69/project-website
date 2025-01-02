@@ -25,7 +25,7 @@ export function ImageUploader({ onImageSelect }: ImageUploaderProps) {
     <div
       onDrop={handleDrop}
       onDragOver={(e) => e.preventDefault()}
-      className="border-2 border-dashed border-gray-200 rounded-2xl p-8 text-center hover:border-orange-500 transition-colors"
+      className="border-2 border-dashed border-gray-950 rounded-2xl p-8 text-center hover:border-slate-100 transition-colors"
     >
       <input
         type="file"

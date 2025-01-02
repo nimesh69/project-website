@@ -11,8 +11,8 @@ export function ImageCard({ image, title, description, action }: ImageCardProps)
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
       <div className="aspect-[4/3] relative">
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={title}
           className="absolute inset-0 w-full h-full object-cover"
         />
