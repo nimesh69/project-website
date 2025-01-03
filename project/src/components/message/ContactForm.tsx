@@ -33,7 +33,7 @@ const ContactForm = () => {
         
         <button
           type="submit"
-          className="bg-gray-950 text-white px-6 py-2 rounded-md hover:bg-gray-500 transition-colors"
+          className="bg-sky-700 text-white px-6 py-2 rounded-md hover:bg-sky-600 transition-colors"
         >
           GET IN TOUCH
         </button>

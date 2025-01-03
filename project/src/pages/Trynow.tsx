@@ -29,7 +29,14 @@ export function Trynow() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50" style={{
+      width: '100%',
+      height: '100%',
+      backgroundColor: '#ffffff',
+      backgroundImage: 'radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0)',
+      backgroundSize: '30px 30px',
+      backgroundPosition: '-5px -5px',
+    }}>
       <Header />
       <main className="max-w-6xl mx-auto px-4 py-12">
         <div className="text-center mb-12">

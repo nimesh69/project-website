@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <div className="flex justify-between items-center gap-12 px-6 py-12">
       <div className="flex-1">
-        <div className="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-800 mb-4">
+        <div className="inline-block px-4 py-1 rounded-full bg-orange-200 text-orange-800 mb-4">
           Facial Restoration & Enhancement
         </div>
         <h1 className="text-5xl font-bold mb-4">
@@ -16,7 +16,7 @@ export function Hero() {
           Upload your photo and witness the transformation—preserve memories with clarity and brilliance.
         </p>
         <div className="flex gap-4">
-          <Link href="/Trynow" className="bg-orange-400 text-white px-6 py-3 rounded-full hover:bg-orange-500 transition-colors flex items-center gap-2">
+          <Link href="/Trynow" className="bg-sky-700 text-white px-6 py-3 rounded-full hover:bg-sky-600 transition-colors flex items-center gap-2">
             Try Now <span>→</span>
           </Link>
         </div>
