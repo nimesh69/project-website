@@ -8,7 +8,7 @@ export function NavButtons() {
       <nav className="hidden md:flex items-center gap-6">
         <Link href="/">Home</Link>
         <Link href="#">Our Work</Link>
-        <Link href="#">About us</Link>
+        <Link href="/Aboutus">About us</Link>
       </nav>
       <Link href="/login" className="p-2 hover:bg-gray-100 rounded-full">
         <LogIn className="w-4 h-4 ml-2" />
