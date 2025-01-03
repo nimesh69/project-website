@@ -6,7 +6,7 @@ export function Logo() {
   return (
     <Link to="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2">
       <Sparkles className="w-6 h-6" />
-      Recover Facial Images
+      AI Facial Restoration
     </Link>
   );
 }
