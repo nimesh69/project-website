@@ -5,7 +5,14 @@ import { Header } from '../components/Header/Header';
 import { SocialLogin } from '../components/Login/SocialLogin';
 export function LoginPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50" style={{
+      width: '100%',
+      height: '100%',
+      backgroundColor: '#ffffff',
+      backgroundImage: 'radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0)',
+      backgroundSize: '30px 30px',
+      backgroundPosition: '-5px -5px',
+    }}>
         <Header />
       <div className="max-w-lg mx-auto pt-8">
         <div className="flex justify-between items-center mb-12">
