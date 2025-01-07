@@ -7,7 +7,7 @@ export function NavButtons() {
     <div className="flex items-center gap-6">
       <nav className="hidden md:flex items-center gap-6">
         <Link href="/">Home</Link>
-        <Link href="#">Our Work</Link>
+        <Link href="/OurWork">Our Work</Link>
         <Link href="/Aboutus">About us</Link>
       </nav>
       <Link href="/login" className="p-2 hover:bg-gray-100 rounded-full">
