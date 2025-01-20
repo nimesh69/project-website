@@ -2,38 +2,40 @@ import React from 'react';
 import { TeamMember } from '../components/TeamMember/TeamMember';
 import { Header } from '../components/Header/Header';
 import { Mail } from 'lucide-react';
+import profile from '../components/images/profile.jpg'
+import profile1 from '../components/images/aadishpp.jpg'
 
 function Aboutus() {
   const teamMembers = [
     {
       name: "Nimesh Shrestha",
       role: "Lead Researcher",
-      description: "Specializing in computer vision and deep learning with 10+ years of experience in facial recognition technology.",
-      image: "",
+      description: "A passionate tech enthusiast with a strong interest in Machine Learning, Artificial Intelligence, and full-stack development.",
+      image: profile,
       linkedin: "https://www.linkedin.com/in/nimesh-shrestha-b22057206/",
       github: "https://github.com/nimesh69",
-      website: "https://example.com",
+      website: "https://www.nimeshstha.com.np/",
       email: "nimeshstha79@gmail.com",
     },
     {
       name: "Aadish Prajapati",
-      role: "ML Engineer",
-      description: "Expert in implementing neural networks and optimization algorithms for image processing applications.",
-      image: "",
-      linkedin: "https://linkedin.com",
+      role: "Aspiring Full-Stack Developer",
+      description: "Passionate about building seamless user experiences and efficient backend systems for modern web applications.",
+      image: profile1,
+      linkedin: "https://www.linkedin.com/in/adish-prajapati-b29a25257/",
       github: "https://github.com/aadish-praz",
-      website: "https://example.com",
-      email: "alex.rodriguez@example.com"
+      website: "https://adishprajapati.com.np/portfolio/",
+      email: "prazapatiadish12@gmail.com"
     },
     {
       name: "Kusan Khambu",
       role: "Research Scientist",
       description: "Focusing on innovative approaches to facial feature extraction and reconstruction methodologies.",
       image: "",
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/kusan-khambu-28bb2631b/",
       github: "https://github.com/KhamuKusan7",
-      website: "https://example.com",
-      email: "maya.patel@example.com"
+      website: "https://www.kusankhambu.com.np/",
+      email: "kusanshrestha@gmail.com"
     },
     {
       name: "Simal Shakha",
@@ -77,7 +79,7 @@ function Aboutus() {
         backgroundPosition: '-5px -5px',
       }}>
         <a
-          href="mailto:nimeshstha79@gmail.com"
+          href="mailto:nimeshstha79@gmail.com,prazapatiadish12@gmail.com"
           className="inline-flex items-center gap-2 bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition-colors"
         >
           <Mail className="w-5 h-5" />
