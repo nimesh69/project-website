@@ -22,10 +22,18 @@ import graphImage12 from '../components/images/asian + celebx/output3.png';
 import resultImage3 from '../components/images/only asian/a (2).png';
 import graphImage13 from '../components/images/only asian/output.png';
 import graphImage14 from '../components/images/only asian/output2.png';
+
+import resultImage4 from '../components/images/esrgan/image.jpg';
+import graphImage15 from '../components/images/esrgan/image (1).png';
+import graphImage16 from '../components/images/esrgan/image (2).png';
+import graphImage17 from '../components/images/esrgan/image (3).png';
+import graphImage18 from '../components/images/esrgan/image (4).png';
+
+
 const models = [
     {
         name: "Dataset1(FFHQ+celeb A+Asian Faces)",
-        description: "A large dataset of Images containing 70,000 HQ images from FFHQ , 30,000 HQ celebrity images and 10,000 HQ asian faces images.The resolution of all the images is kept at 256.",
+        description: "A comprehensive dataset consisting of 70,000 high-quality images from the FFHQ dataset, 30,000 high-quality celebrity images, and 10,000 high-quality Asian face images. All images are uniformly resized to a resolution of 256x256 pixels and processed using the GFPGAN architecture for enhanced image quality and restoration.",
         metrics: {
             psnr: "24.2897",
             Time_Taken: "6days 18hr28min22sec",
@@ -36,7 +44,7 @@ const models = [
     },
     {
         name: "Dataset2(FFHQ+celeb A+Asian Faces)",
-        description: "A large dataset of Images containing 70,000 HQ images from FFHQ , 30,000 HQ celebrity images and 10,000 HQ asian faces images.The resolution of all the images is kept at 512.",
+        description: "A comprehensive dataset consisting of 70,000 high-quality images from the FFHQ dataset, 30,000 high-quality celebrity images, and 10,000 high-quality Asian face images. All images are uniformly resized to a resolution of 512x512 pixels and processed using the GFPGAN architecture for enhanced image quality and restoration.",
         metrics: {
             psnr: "23.7699",
             Time_Taken: "8days 12hr44min39sec",
@@ -47,7 +55,7 @@ const models = [
     },
     {
         name: "Dataset3(Asian Faces+celebx)",
-        description: "A large dataset of Images containing, 30,000 HQ celebrity images and 10,000 HQ asian faces images.The resolution of all the images is kept at 512.",
+        description: "A comprehensive dataset consisting of 30,000 high-quality celebrity images, and 10,000 high-quality Asian face images. All images are uniformly resized to a resolution of 512x512 pixels and processed using the GFPGAN architecture for enhanced image quality and restoration.",
         metrics: {
             psnr: "21.5111",
             Time_Taken: "3days 11hr26min46sec",
@@ -58,7 +66,7 @@ const models = [
     },
     {
         name: "Dataset4(Asian Faces)",
-        description: "A large dataset of Images containing 10,000 HQ asian faces images.The resolution of all the images is kept at 512.",
+        description: "A comprehensive dataset consisting of 10,000 high-quality Asian face images. All images are uniformly resized to a resolution of 512x512 pixels and processed using the GFPGAN architecture for enhanced image quality and restoration.",
         metrics: {
             psnr: "20.5642",
             Time_Taken: "2days 7hr55min003sec",
@@ -67,7 +75,17 @@ const models = [
         resultImage: resultImage3,
         graphImages: [graphImage13, graphImage14],
     },
-    // Add more models here with similar structure
+    {
+        name: "ESRGAN",
+        description: "A diverse dataset containing 70,000 high-quality images from the FFHQ dataset, 30,000 high-quality celebrity images, and 10,000 high-quality Asian face images. All images are resized to a resolution of 128x128 pixels and processed using the ESRGAN architecture to enhance visual quality and details.",
+        metrics: {
+            psnr: "23.92420959",
+            Time_Taken: "1days 08hr32min2sec",
+            Iteration: "200000"
+        },
+        resultImage: resultImage4,
+        graphImages: [graphImage15, graphImage16, graphImage17, graphImage18],
+    },
 ];
 
 function OurWork() {
