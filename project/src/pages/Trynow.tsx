@@ -18,15 +18,54 @@ export function Trynow() {
     };
     reader.readAsDataURL(file);
   };
-
   const processImage = async (imageData: string) => {
     setIsProcessing(true);
-    // Simulate image processing - In a real app, you would call your AI model API here
-    setTimeout(() => {
-      setEnhancedImage(imageData);
+  
+    try {
+      // Convert Base64 string to Blob
+      const base64ToBlob = (base64: string): Blob => {
+        const byteString = atob(base64.split(',')[1]);
+        const arrayBuffer = new Uint8Array(byteString.length);
+        for (let i = 0; i < byteString.length; i++) {
+          arrayBuffer[i] = byteString.charCodeAt(i);
+        }
+        return new Blob([arrayBuffer], { type: 'image/jpeg' });
+      };
+  
+      const imageBlob = base64ToBlob(imageData);
+      const formData = new FormData();
+      formData.append('file', imageBlob, 'uploaded_image.jpg');
+  
+      // Call the FastAPI `/enhance` endpoint
+      const response = await fetch('http://localhost:8000/enhance', {  //adjust according to our local host
+        method: 'POST',
+        body: formData,
+      });
+  
+      if (!response.ok) {
+        throw new Error(`Error: ${response.statusText}`);
+      }
+  
+      // Get the enhanced image as a Blob
+      const enhancedBlob = await response.blob();
+  
+      // Convert the Blob to a Base64 string for display
+      const enhancedBase64 = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result as string);
+        reader.onerror = (error) => reject(error);
+        reader.readAsDataURL(enhancedBlob);
+      });
+  
+      setEnhancedImage(enhancedBase64);
+    } catch (error) {
+      console.error('Error enhancing image:', error);
+    } finally {
       setIsProcessing(false);
-    }, 2000);
+    }
   };
+  
+  
 
   return (
     <div className="min-h-screen bg-gray-50" style={{
