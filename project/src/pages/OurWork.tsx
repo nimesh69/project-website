@@ -29,10 +29,25 @@ import graphImage16 from '../components/images/esrgan/image (2).png';
 import graphImage17 from '../components/images/esrgan/image (3).png';
 import graphImage18 from '../components/images/esrgan/image (4).png';
 
-
+import resultImage5 from '../components/images/asian+ffhq+celebx+custom(512)/453892935_2399830226884613_5983478680683818176_n_11.png';
+import graphImage19 from '../components/images/asian+ffhq+celebx+custom(512)/output.png';
+import graphImage20 from '../components/images/asian+ffhq+celebx+custom(512)/output1.png';
+import graphImage21 from '../components/images/asian+ffhq+celebx+custom(512)/output2.png';
+import graphImage22 from '../components/images/asian+ffhq+celebx+custom(512)/output3.png';
 const models = [
     {
-        name: "Dataset1(FFHQ+celeb A+Asian Faces)",
+        name: "Dataset1(FFHQ+celeb A+Asian Faces+Custom)",
+        description: "A comprehensive dataset consisting of 70,000 high-quality images from the FFHQ dataset, 30,000 high-quality celebrity images, 10,000 high-quality Asian face images and 10,000 custom dataset. All images are uniformly resized to a resolution of 512x512 pixels and processed using the GFPGAN architecture for enhanced image quality and restoration.",
+        metrics: {
+            psnr: "24.2617",
+            Time_Taken: "8days 06hr55min03sec",
+            Iteration: "1200000"
+        },
+        resultImage: resultImage5,
+        graphImages: [graphImage19, graphImage20, graphImage21, graphImage22],
+    },
+    {
+        name: "Dataset2(FFHQ+celeb A+Asian Faces)",
         description: "A comprehensive dataset consisting of 70,000 high-quality images from the FFHQ dataset, 30,000 high-quality celebrity images, and 10,000 high-quality Asian face images. All images are uniformly resized to a resolution of 256x256 pixels and processed using the GFPGAN architecture for enhanced image quality and restoration.",
         metrics: {
             psnr: "24.2897",
@@ -43,7 +58,7 @@ const models = [
         graphImages: [graphImage1, graphImage2, graphImage3, graphImage4],
     },
     {
-        name: "Dataset2(FFHQ+celeb A+Asian Faces)",
+        name: "Dataset3(FFHQ+celeb A+Asian Faces)",
         description: "A comprehensive dataset consisting of 70,000 high-quality images from the FFHQ dataset, 30,000 high-quality celebrity images, and 10,000 high-quality Asian face images. All images are uniformly resized to a resolution of 512x512 pixels and processed using the GFPGAN architecture for enhanced image quality and restoration.",
         metrics: {
             psnr: "23.7699",
@@ -54,7 +69,7 @@ const models = [
         graphImages: [graphImage5, graphImage6, graphImage7, graphImage8],
     },
     {
-        name: "Dataset3(Asian Faces+celebx)",
+        name: "Dataset4(Asian Faces+celebx)",
         description: "A comprehensive dataset consisting of 30,000 high-quality celebrity images, and 10,000 high-quality Asian face images. All images are uniformly resized to a resolution of 512x512 pixels and processed using the GFPGAN architecture for enhanced image quality and restoration.",
         metrics: {
             psnr: "21.5111",
@@ -65,7 +80,7 @@ const models = [
         graphImages: [graphImage9, graphImage10, graphImage11, graphImage12],
     },
     {
-        name: "Dataset4(Asian Faces)",
+        name: "Dataset5(Asian Faces)",
         description: "A comprehensive dataset consisting of 10,000 high-quality Asian face images. All images are uniformly resized to a resolution of 512x512 pixels and processed using the GFPGAN architecture for enhanced image quality and restoration.",
         metrics: {
             psnr: "20.5642",
