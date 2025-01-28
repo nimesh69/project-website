@@ -4,12 +4,13 @@ import { Header } from '../components/Header/Header';
 import { Mail } from 'lucide-react';
 import profile from '../components/images/profile.jpg'
 import profile1 from '../components/images/aadishpp.jpg'
-
+import profile2 from '../components/images//kusan.jpeg'
+import profile3 from '../components/images/simal.jpg'
 function Aboutus() {
   const teamMembers = [
     {
       name: "Nimesh Shrestha",
-      role: "Lead Researcher",
+      role: "Leader",
       description: "A passionate tech enthusiast with a strong interest in Machine Learning, Artificial Intelligence, and full-stack development.",
       image: profile,
       linkedin: "https://www.linkedin.com/in/nimesh-shrestha-b22057206/",
@@ -29,9 +30,9 @@ function Aboutus() {
     },
     {
       name: "Kusan Khambu",
-      role: "Research Scientist",
+      role: "#",
       description: "Focusing on innovative approaches to facial feature extraction and reconstruction methodologies.",
-      image: "",
+      image: profile2,
       linkedin: "https://www.linkedin.com/in/kusan-khambu-28bb2631b/",
       github: "https://github.com/KhamuKusan7",
       website: "https://www.kusankhambu.com.np/",
@@ -39,13 +40,13 @@ function Aboutus() {
     },
     {
       name: "Simal Shakha",
-      role: "Software Architect",
+      role: "#",
       description: "Designing scalable systems for processing and analyzing large-scale facial image datasets hjjdcjvy.",
-      image: "",
+      image: profile3,
       linkedin: "https://linkedin.com",
-      github: "https://github.com",
+      github: "https://github.com/simalshakha",
       website: "https://example.com",
-      email: "james.wilson@example.com"
+      email: "Sshakha350@gmail.com"
     }
   ];
 
@@ -79,7 +80,7 @@ function Aboutus() {
         backgroundPosition: '-5px -5px',
       }}>
         <a
-          href="mailto:nimeshstha79@gmail.com,prazapatiadish12@gmail.com"
+          href="mailto:nimeshstha79@gmail.com,prazapatiadish12@gmail.com,kusanshrestha@gmail.com"
           className="inline-flex items-center gap-2 bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition-colors"
         >
           <Mail className="w-5 h-5" />
